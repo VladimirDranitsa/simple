@@ -26,6 +26,9 @@ $indent-l: $base * 20;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+body {
+  box-sizing: border-box;
+}
 .button {
   padding: $base * 3.5 0;
   font-family: $quicksand;
@@ -47,6 +50,27 @@ $indent-l: $base * 20;
     &:active {
       background-color: $red-light;
       color: $blue-light;
+    }
+  }
+  &_colored {
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    background: #4c85ff;
+    box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+    transition: $transition;
+    &:hover {
+      background: $grey;
+    }
+  }
+  &_border {
+    padding: 12px 25px 13px;
+    border: 1px solid #adb4d2;
+    color: #adb4d2;
+    transition: $transition;
+    &:hover {
+      color: #fff;
+      background: $grey;
     }
   }
 }
@@ -71,7 +95,6 @@ h6 {
   font-weight: 300;
   font-size: $base * 12;
   line-height: $base * 15;
-  text-align: center;
 }
 .dots {
   padding-left: 0;
@@ -195,6 +218,7 @@ h6 {
   &__title {
     margin-top: 16px;
     margin-bottom: 126px;
+    text-align: center;
     color: #3d4f9f;
     &_accent {
       font-weight: 500;
@@ -255,6 +279,56 @@ h6 {
 }
 
 // === / CUSTOMERS ===
+
+// ===  PLAN-AND-MANAGE ===
+.plan-and-manage {
+  position: relative;
+  overflow: hidden;
+  background: #f5f8ff;
+  &__wrapper {
+    max-width: 928px;
+    margin: 0 auto;
+    padding: $base * 25 $base * 5;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__prefix {
+    color: #3d4f9f;
+  }
+  &__title {
+    margin: 27px 0;
+    font-family: $quicksand;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    color: #3d4f9f;
+    &_accent {
+      font-weight: 400;
+    }
+  }
+  &__text {
+    margin-bottom: 47px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #8d96bd;
+  }
+  &__button_colored {
+    border-radius: 2px 0 0 2px;
+  }
+  &__button_border {
+    border-left: none;
+    border-radius: 0 2px 2px 0;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+}
+// === / PLAN-AND-MANAGE ===
 
 // ===  FOOTER ===
 .footer {
