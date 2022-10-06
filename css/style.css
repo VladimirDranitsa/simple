@@ -79,9 +79,9 @@ h6 {
 }
 
 .header__wrapper {
-  max-width: 1440px;
+  max-width: 1480px;
   margin: 0 auto;
-  padding: 18px 0;
+  padding: 18px 20px;
 }
 .header__navigation {
   margin-left: 72px;
@@ -149,6 +149,7 @@ h6 {
 }
 
 .hero-image {
+  position: relative;
   height: 570px;
   background: url(../assets/img/hero-image_bg.png) 50% 50%;
   background-repeat: no-repeat;
@@ -156,7 +157,7 @@ h6 {
 }
 .hero-image__wrapper {
   margin: 0 auto;
-  padding-top: 92px;
+  padding: 92px 20px 0;
 }
 .hero-image__prefix {
   text-align: center;
@@ -187,16 +188,21 @@ h6 {
   background-color: #8d96bd;
 }
 .hero-image__dots {
+  position: absolute;
   width: 70px;
-  margin: 170px auto 0;
+  bottom: 10px;
+  left: calc(50% - 35px);
+  z-index: 2;
 }
 
 .customers__wrapper {
-  max-width: 888px;
+  max-width: 928px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 20px;
 }
 .customers__list {
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,9 +217,9 @@ h6 {
 }
 
 .footer__wrapper {
-  max-width: 1440px;
+  max-width: 1480px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 80px 20px;
 }
 .footer__navigation {
   margin-left: 72px;

@@ -100,9 +100,9 @@ h6 {
 // === HEADER ===
 .header {
   &__wrapper {
-    max-width: 1440px;
+    max-width: 1480px;
     margin: 0 auto;
-    padding: $base * 4.5 0;
+    padding: $base * 4.5 $base * 5;
   }
   &__navigation {
     margin-left: $base * 18;
@@ -179,13 +179,14 @@ h6 {
 
 // ===  HERO-IMAGE ===
 .hero-image {
+  position: relative;
   height: $base * 142.5;
   background: url(../assets/img/hero-image_bg.png) 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   &__wrapper {
     margin: 0 auto;
-    padding-top: 92px;
+    padding: 92px 20px 0;
   }
   &__prefix {
     text-align: center;
@@ -216,8 +217,11 @@ h6 {
     }
   }
   &__dots {
+    position: absolute;
     width: 70px;
-    margin: 170px auto 0;
+    bottom: 10px;
+    left: calc(50% - 35px);
+    z-index: 2;
   }
 }
 // === / HERO-IMAGE ===
@@ -225,11 +229,13 @@ h6 {
 // ===  CUSTOMERS ===
 .customers {
   &__wrapper {
-    max-width: 888px;
+    max-width: 928px;
     margin: 0 auto;
-    padding: $base * 15 0;
+    padding: $base * 15 $base * 5;
   }
   &__list {
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -253,9 +259,9 @@ h6 {
 // ===  FOOTER ===
 .footer {
   &__wrapper {
-    max-width: 1440px;
+    max-width: 1480px;
     margin: 0 auto;
-    padding: $indent-l 0;
+    padding: $indent-l $base * 5;
   }
   &__navigation {
     margin-left: $base * 18;
