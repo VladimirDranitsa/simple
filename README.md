@@ -1,1 +1,1 @@
-# simple
+https://vladimirdranitsa.github.io/simple/
